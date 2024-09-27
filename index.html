@@ -18,7 +18,8 @@
             <div class="nav__icon">
                 <a href="index.html">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.0001 19V14H14.0001V19C14.0001 19.55 14.4501 20 15.0001 20H18.0001C18.5501 20 19.0001 19.55 19.0001 19V12H20.7001C21.1601 12 21.3801 11.43 21.0301 11.13L12.6701 3.59997C12.2901 3.25997 11.7101 3.25997 11.3301 3.59997L2.9701 11.13C2.6301 11.43 2.8401 12 3.3001 12H5.0001V19C5.0001 19.55 5.4501 20 6.0001 20H9.0001C9.5501 20 10.0001 19.55 10.0001 19Z" fill="#F8F8F8"/>
+                        <path d="M10.0001 19V14H14.0001V19C14.0001 19.55 14.4501 20 15.0001 20H18.0001C18.5501 20 19.0001 19.55 19.0001 19V12H20.7001C21.1601 12 21.3801 11.43 21.0301 11.13L12.6701 3.59997C12.2901 3.25997 11.7101 3.25997 11.3301 3.59997L2.9701 11.13C2.6301 11.43 2.8401 12 3.3001 12H5.0001V19C5.0001 19.55 5.4501 20 6.0001 20H9.0001C9.5501 20 10.0001 19.55 10.0001 19Z"
+                              fill="#F8F8F8"/>
                     </svg>
                 </a>
             </div>
@@ -29,12 +30,141 @@
             <div class="nav__icon">
                 <a href="#">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 19.999L19 19.999L19 5.99902C19 5.46859 18.7893 4.95988 18.4142 4.58481C18.0391 4.20974 17.5304 3.99902 17 3.99902L9 3.99902M8 8.99902L5 11.999M5 11.999L8 14.999M5 11.999L15 11.999" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 19.999L19 19.999L19 5.99902C19 5.46859 18.7893 4.95988 18.4142 4.58481C18.0391 4.20974 17.5304 3.99902 17 3.99902L9 3.99902M8 8.99902L5 11.999M5 11.999L8 14.999M5 11.999L15 11.999"
+                              stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
             </div>
         </div>
     </nav>
 </header>
+<main class="main">
+    <div class="sidebar">
+        <ul class="sidebar__menu">
+            <li class="sidebar__menu-item active-menu" data-menu="account-menu">
+                <svg class="sidebar__icon active-icon" width="21" height="24" viewBox="0 0 21 24" fill="#BBE1FA"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_37_27)">
+                        <path d="M10.5 12C12.0913 12 13.6174 11.3679 14.7426 10.2426C15.8679 9.11742 16.5 7.5913 16.5 6C16.5 4.4087 15.8679 2.88258 14.7426 1.75736C13.6174 0.632141 12.0913 0 10.5 0C8.9087 0 7.38258 0.632141 6.25736 1.75736C5.13214 2.88258 4.5 4.4087 4.5 6C4.5 7.5913 5.13214 9.11742 6.25736 10.2426C7.38258 11.3679 8.9087 12 10.5 12ZM8.35781 14.25C3.74063 14.25 0 17.9906 0 22.6078C0 23.3766 0.623438 24 1.39219 24H19.6078C20.3766 24 21 23.3766 21 22.6078C21 17.9906 17.2594 14.25 12.6422 14.25H8.35781Z"
+                              fill="inherit"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_37_27">
+                            <rect width="21" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                حساب کاربری
+            </li>
+            <li class="sidebar__menu-item" data-menu="shop-management">
+                <svg class="sidebar__icon" width="24" height="24" viewBox="0 0 24 24" fill="#BBE1FA"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6V4H20V6H4ZM4 20V14H3V12L4 7H20L21 12V14H20V20H18V14H14V20H4ZM6 18H12V14H6V18Z"
+                          fill="inherit"/>
+                </svg>
+                مدیریت فروشگاه
+            </li>
+            <li class="sidebar__menu-item" data-menu="finance">
+                <svg class="sidebar__icon" width="24" height="24" viewBox="0 0 24 24" fill="#BBE1FA"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 22.2422L4.5 17.7422V24H0V22.2422ZM6 16.2422L10.5 11.7422V24H6V16.2422ZM21 10.5H22.5V24H18V13.2422L21 10.5ZM15.75 15.4922L16.5 14.7422V24H12V11.7422L15.75 15.4922ZM24 3V9H22.5V5.56641L15.75 12.3047L11.25 7.80469L0 19.0664V16.9336L11.25 5.69531L15.75 10.1953L21.4336 4.5H18V3H24Z"
+                          fill="inherit"/>
+                </svg>
+                امور مالی
+            </li>
+            <li class="sidebar__menu-item" data-menu="information">
+                <svg class="sidebar__icon" width="24" height="24" viewBox="0 0 24 24" fill="#BBE1FA"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75 10V14C1.75 16.829 1.75 18.243 2.629 19.122C2.846 19.339 3.096 19.502 3.392 19.626C3.38531 19.5814 3.37898 19.5367 3.373 19.492C3.25 18.574 3.25 17.429 3.25 16.099V7.902C3.25 6.572 3.25 5.426 3.373 4.509L3.393 4.375C3.10725 4.49034 2.84748 4.6617 2.629 4.879C1.75 5.758 1.75 7.172 1.75 10ZM21.75 10V14C21.75 16.829 21.75 18.243 20.871 19.122C20.654 19.339 20.404 19.502 20.108 19.626L20.127 19.492C20.25 18.574 20.25 17.429 20.25 16.099V7.902C20.25 6.572 20.25 5.426 20.127 4.509C20.1207 4.46428 20.114 4.41961 20.107 4.375C20.404 4.498 20.654 4.662 20.871 4.879C21.75 5.758 21.75 7.172 21.75 10Z"
+                          fill="inherit"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.629 2.879C4.75 3.757 4.75 5.172 4.75 8V16C4.75 18.828 4.75 20.243 5.629 21.121C6.507 22 7.922 22 10.75 22H12.75C15.578 22 16.993 22 17.871 21.121C18.75 20.243 18.75 18.828 18.75 16V8C18.75 5.172 18.75 3.757 17.871 2.879C16.993 2 15.578 2 12.75 2H10.75C7.922 2 6.507 2 5.629 2.879ZM8 17C8 16.8011 8.07902 16.6103 8.21967 16.4697C8.36032 16.329 8.55109 16.25 8.75 16.25H11.75C11.9489 16.25 12.1397 16.329 12.2803 16.4697C12.421 16.6103 12.5 16.8011 12.5 17C12.5 17.1989 12.421 17.3897 12.2803 17.5303C12.1397 17.671 11.9489 17.75 11.75 17.75H8.75C8.55109 17.75 8.36032 17.671 8.21967 17.5303C8.07902 17.3897 8 17.1989 8 17ZM8.75 12.25C8.55109 12.25 8.36032 12.329 8.21967 12.4697C8.07902 12.6103 8 12.8011 8 13C8 13.1989 8.07902 13.3897 8.21967 13.5303C8.36032 13.671 8.55109 13.75 8.75 13.75H14.75C14.9489 13.75 15.1397 13.671 15.2803 13.5303C15.421 13.3897 15.5 13.1989 15.5 13C15.5 12.8011 15.421 12.6103 15.2803 12.4697C15.1397 12.329 14.9489 12.25 14.75 12.25H8.75ZM8 9C8 8.80109 8.07902 8.61032 8.21967 8.46967C8.36032 8.32902 8.55109 8.25 8.75 8.25H14.75C14.9489 8.25 15.1397 8.32902 15.2803 8.46967C15.421 8.61032 15.5 8.80109 15.5 9C15.5 9.19891 15.421 9.38968 15.2803 9.53033C15.1397 9.67098 14.9489 9.75 14.75 9.75H8.75C8.55109 9.75 8.36032 9.67098 8.21967 9.53033C8.07902 9.38968 8 9.19891 8 9Z"
+                          fill="inherit"/>
+                </svg>
+                مدارک و اطلاعات
+            </li>
+        </ul>
+
+        <div class="sidebar__submenu-wrapper">
+            <ul class="sidebar__submenu active-submenu" id="account-menu">
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">ایجاد حساب کارمندان و ادمین</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">حساب کارمندان و ادمین</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">ویرایش اطلاعات شخصی</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">ساعات کاری</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">ارسال پیام</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">رزرو ملاقات</a>
+                </li>
+                <li class="sidebar__submenu-item active-submenu-item">
+                    <a href="index.html" class="sidebar__submenu-link">اخبار</a>
+                </li>
+            </ul>
+
+            <ul class="sidebar__submenu" id="shop-management">
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">مدیریت محصولات</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">مدیریت سفارشات</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">نظرات محصولات</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">حساب کاربران</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">بخش پشتیبانی</a>
+                </li>
+            </ul>
+
+            <ul class="sidebar__submenu" id="finance">
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">حسابداری</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">فیش حقوقی</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">وام و اقساط شرکت</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="payslip.html" class="sidebar__submenu-link">درخواست وام</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">وام های درخواست شده</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">اقساط پرداخت وام</a>
+                </li>
+            </ul>
+
+            <ul class="sidebar__submenu" id="information">
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">مدارک محرمانه شرکت</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">مدارک وام</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">مدارک ارسال شده</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">دسترسی به قراردادها</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
 </body>
 </html>
