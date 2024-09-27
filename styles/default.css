@@ -1,0 +1,31 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    line-height: 1.6;
+    font-size: 1.6rem;
+    direction: rtl;
+    background-color: #1B262C;
+    font-family: 'Vazirmatn';
+}
+
+*,*::before,*::after{
+    outline: none;
+    box-sizing: inherit;
+    font-family: Vazirmatn;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    display: flex;
+}
+.main-content{
+    width: calc(100vw - 32.5rem);
+    padding: 3rem 6rem;
+}
+input{
+    font-family: 'Vazirmatn';
+}
