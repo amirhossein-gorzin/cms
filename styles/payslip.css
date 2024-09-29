@@ -1,0 +1,266 @@
+@import "reset.css";
+@import "default.css";
+@import "font.css";
+@import "header.css";
+@import "sidebar.css";
+
+.payslip__header{
+    position: relative;
+}
+.payslip__header-title{
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 3.8rem;
+    color: #BBE1FA;
+}
+.payslip__header-line{
+    position: absolute;
+    width: 17rem;
+    height: 0.2rem;
+    background-color: #BBE1FA;
+    bottom: -0.6rem;
+    right: -2.4rem;
+    border-radius: 2rem;
+}
+.payslip__button-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.5rem 0;
+}
+.payslip__button{
+    cursor: pointer;
+    width: 25rem;
+    height: 5rem;
+    background-color: #BBE1FA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+}
+.payslip__button-text{
+    color: #1B262C;
+    font-weight: 700;
+    line-height: 25px;
+}
+.payslip__button-icon{
+    color: #1B262C;
+}
+
+.paid-salary-wrapper{
+    border: 1px solid #BBE1FA;
+    padding: 1.4rem;
+    border-radius: 0.4rem;
+}
+.paid-salary{
+    border: 1px solid #BBE1FA;
+    box-shadow: 0px 2px 30px 0px #BBE1FA1A;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    padding: 1.4rem;
+
+}
+.paid-salary-wrapper .paid-salary:last-child{
+    margin-bottom: 0;
+}
+
+.paid-salary__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-color: #BBE1FA;
+}
+.paid-salary__month-count-info{
+    width: 25rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+.paid-salary__date-wrapper{
+    font-size: 1.4rem;
+    width: 15rem;
+}
+.paid-salary__show-details-button{
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-color: inherit;
+    color: #BBE1FA;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.paid-salary__show-details-icon{
+    transition: all 0.4s ease;
+}
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.paid-salary__details{
+    overflow: hidden;
+    height: 0;
+    transition: all 0.4s ease;
+}
+.paid-salary__infos{
+    display: flex;
+    justify-content: space-between;
+}
+.paid-salary__personal-info{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #BBE1FA;
+    border-radius: 0.4rem;
+    width: 27rem;
+}
+.paid-salary__personal-info-title,
+.paid-salary__payment-deduction-title{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #BBE1FA;
+}
+.paid-salary__personal-info-text,
+.paid-salary__payment-deduction-text{
+    font-weight: 600;
+    color: #BBE1FA;
+}
+.paid-salary__personal-info__detail-wrapper{
+    color: white;
+    margin: 1rem 0;
+}
+.paid-salary__personal-info__detail{
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 1.2rem;
+}
+.paid-salary__personal-info__detail-id,
+.paid-salary__personal-info__detail-name,
+.paid-salary__personal-info__detail-idcode{
+    text-align: left;
+    margin-left: 1.5rem;
+}
+
+.paid-salary__payment-deduction{
+    width: 74rem;
+    border: 1px solid #BBE1FA;
+    border-radius: 0.4rem;
+}
+.paid-salary__payment-deduction-content{
+    display: flex;
+}
+.paid-salary__payment{
+    width: 68%;
+    border-left: 1px solid #BBE1FA;
+    padding: 1rem;
+    color: #BBE1FA;
+}
+.paid-salary__working-hours-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.paid-salary__working-hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #BBE1FA;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+}
+.paid-salary__working-hours-text{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.paid-salary__payment-pension-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.paid-salary__payment-whole-price-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    background-color: #3282B8;
+    border: 1px solid #BBE1FA;
+    border-radius: 0.2rem;
+    color: white;
+}
+.paid-salary__payment-whole-price-text{
+    margin-left: 0.3rem;
+}
+.paid-salary__deduction{
+    width: 32%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.paid-salary__deduction__detail-wrapper{
+    color: #BBE1FA;
+}
+.paid-salary__deduction__detail-insurance,
+.paid-salary__deduction__detail-lifeInsurance,
+.paid-salary__deduction__detail-task{
+    text-align: left;
+}
+.paid-salary__wholePrice-print-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.paid-salary__wholePrice{
+    width: 76.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    background-color: #3282B8;
+    border: 1px solid #BBE1FA;
+    margin-top: 1.3rem;
+    border-radius: 0.4rem;
+    color: white;
+}
+.paid-salary__wholePrice-text{
+    font-weight: 600;
+    margin-left: 0.2rem;
+}
+.paid-salary__print-link{
+    width: 22.5%;
+    color: #BBE1FA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0F4C75;
+    border-radius: 0.4rem;
+    height: 5rem;
+    padding: 1rem 2rem;
+    margin-top: 1.3rem;
+}
+.paid-salary__print-link-text{
+
+}
+.paid-salary__print-icon{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+
+.active-payslip{
+    color: #0F4C75;
+    border-color: #0F4C75;
+}
+.active-salary-icon{
+    stroke: #0F4C75;
+    transform: rotate(180deg);
+}

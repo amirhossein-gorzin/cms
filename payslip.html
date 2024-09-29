@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/payslip.css">
+    <title>payslip</title>
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <div class="nav__logo">
+            <img class="nav__img" src="image/logo.jpg" alt="logo-of-cms">
+        </div>
+        <div class="nav__information-icons-wrapper">
+            <div class="nav__icon">
+                <a href="index.html">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.0001 19V14H14.0001V19C14.0001 19.55 14.4501 20 15.0001 20H18.0001C18.5501 20 19.0001 19.55 19.0001 19V12H20.7001C21.1601 12 21.3801 11.43 21.0301 11.13L12.6701 3.59997C12.2901 3.25997 11.7101 3.25997 11.3301 3.59997L2.9701 11.13C2.6301 11.43 2.8401 12 3.3001 12H5.0001V19C5.0001 19.55 5.4501 20 6.0001 20H9.0001C9.5501 20 10.0001 19.55 10.0001 19Z" fill="#F8F8F8"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="nav__information-box">
+                <span class="nav__information-name">امیرحسین گرزین</span>
+                <div class="nav__information-profile"></div>
+            </div>
+            <div class="nav__icon">
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 19.999L19 19.999L19 5.99902C19 5.46859 18.7893 4.95988 18.4142 4.58481C18.0391 4.20974 17.5304 3.99902 17 3.99902L9 3.99902M8 8.99902L5 11.999M5 11.999L8 14.999M5 11.999L15 11.999" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <div class="sidebar">
+        <ul class="sidebar__menu">
+            <li class="sidebar__menu-item" data-menu="account-menu">
+                <svg class="sidebar__icon" width="21" height="24" viewBox="0 0 21 24" fill="#BBE1FA" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_37_27)">
+                        <path d="M10.5 12C12.0913 12 13.6174 11.3679 14.7426 10.2426C15.8679 9.11742 16.5 7.5913 16.5 6C16.5 4.4087 15.8679 2.88258 14.7426 1.75736C13.6174 0.632141 12.0913 0 10.5 0C8.9087 0 7.38258 0.632141 6.25736 1.75736C5.13214 2.88258 4.5 4.4087 4.5 6C4.5 7.5913 5.13214 9.11742 6.25736 10.2426C7.38258 11.3679 8.9087 12 10.5 12ZM8.35781 14.25C3.74063 14.25 0 17.9906 0 22.6078C0 23.3766 0.623438 24 1.39219 24H19.6078C20.3766 24 21 23.3766 21 22.6078C21 17.9906 17.2594 14.25 12.6422 14.25H8.35781Z" fill="inherit"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_37_27">
+                            <rect width="21" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                حساب کاربری
+            </li>
+            <li class="sidebar__menu-item" data-menu="shop-management">
+                <svg class="sidebar__icon" width="24" height="24" viewBox="0 0 24 24" fill="#BBE1FA" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6V4H20V6H4ZM4 20V14H3V12L4 7H20L21 12V14H20V20H18V14H14V20H4ZM6 18H12V14H6V18Z" fill="inherit"/>
+                </svg>
+                مدیریت فروشگاه
+            </li>
+            <li class="sidebar__menu-item active-menu" data-menu="finance">
+                <svg class="sidebar__icon active-icon" width="24" height="24" viewBox="0 0 24 24" fill="#BBE1FA" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 22.2422L4.5 17.7422V24H0V22.2422ZM6 16.2422L10.5 11.7422V24H6V16.2422ZM21 10.5H22.5V24H18V13.2422L21 10.5ZM15.75 15.4922L16.5 14.7422V24H12V11.7422L15.75 15.4922ZM24 3V9H22.5V5.56641L15.75 12.3047L11.25 7.80469L0 19.0664V16.9336L11.25 5.69531L15.75 10.1953L21.4336 4.5H18V3H24Z" fill="inherit"/>
+                </svg>
+                امور مالی</li>
+            <li class="sidebar__menu-item" data-menu="information">
+                <svg class="sidebar__icon" width="24" height="24" viewBox="0 0 24 24" fill="#BBE1FA" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75 10V14C1.75 16.829 1.75 18.243 2.629 19.122C2.846 19.339 3.096 19.502 3.392 19.626C3.38531 19.5814 3.37898 19.5367 3.373 19.492C3.25 18.574 3.25 17.429 3.25 16.099V7.902C3.25 6.572 3.25 5.426 3.373 4.509L3.393 4.375C3.10725 4.49034 2.84748 4.6617 2.629 4.879C1.75 5.758 1.75 7.172 1.75 10ZM21.75 10V14C21.75 16.829 21.75 18.243 20.871 19.122C20.654 19.339 20.404 19.502 20.108 19.626L20.127 19.492C20.25 18.574 20.25 17.429 20.25 16.099V7.902C20.25 6.572 20.25 5.426 20.127 4.509C20.1207 4.46428 20.114 4.41961 20.107 4.375C20.404 4.498 20.654 4.662 20.871 4.879C21.75 5.758 21.75 7.172 21.75 10Z" fill="inherit"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.629 2.879C4.75 3.757 4.75 5.172 4.75 8V16C4.75 18.828 4.75 20.243 5.629 21.121C6.507 22 7.922 22 10.75 22H12.75C15.578 22 16.993 22 17.871 21.121C18.75 20.243 18.75 18.828 18.75 16V8C18.75 5.172 18.75 3.757 17.871 2.879C16.993 2 15.578 2 12.75 2H10.75C7.922 2 6.507 2 5.629 2.879ZM8 17C8 16.8011 8.07902 16.6103 8.21967 16.4697C8.36032 16.329 8.55109 16.25 8.75 16.25H11.75C11.9489 16.25 12.1397 16.329 12.2803 16.4697C12.421 16.6103 12.5 16.8011 12.5 17C12.5 17.1989 12.421 17.3897 12.2803 17.5303C12.1397 17.671 11.9489 17.75 11.75 17.75H8.75C8.55109 17.75 8.36032 17.671 8.21967 17.5303C8.07902 17.3897 8 17.1989 8 17ZM8.75 12.25C8.55109 12.25 8.36032 12.329 8.21967 12.4697C8.07902 12.6103 8 12.8011 8 13C8 13.1989 8.07902 13.3897 8.21967 13.5303C8.36032 13.671 8.55109 13.75 8.75 13.75H14.75C14.9489 13.75 15.1397 13.671 15.2803 13.5303C15.421 13.3897 15.5 13.1989 15.5 13C15.5 12.8011 15.421 12.6103 15.2803 12.4697C15.1397 12.329 14.9489 12.25 14.75 12.25H8.75ZM8 9C8 8.80109 8.07902 8.61032 8.21967 8.46967C8.36032 8.32902 8.55109 8.25 8.75 8.25H14.75C14.9489 8.25 15.1397 8.32902 15.2803 8.46967C15.421 8.61032 15.5 8.80109 15.5 9C15.5 9.19891 15.421 9.38968 15.2803 9.53033C15.1397 9.67098 14.9489 9.75 14.75 9.75H8.75C8.55109 9.75 8.36032 9.67098 8.21967 9.53033C8.07902 9.38968 8 9.19891 8 9Z" fill="inherit"/>
+                </svg>
+                مدارک و اطلاعات
+            </li>
+        </ul>
+
+        <div class="sidebar__submenu-wrapper">
+            <ul class="sidebar__submenu" id="account-menu">
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">ایجاد حساب کارمندان و ادمین</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">حساب کارمندان و ادمین</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">ویرایش اطلاعات شخصی</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">ساعات کاری</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">ارسال پیام</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">رزرو ملاقات</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="index.html" class="sidebar__submenu-link">اخبار</a>
+                </li>
+            </ul>
+
+            <ul class="sidebar__submenu" id="shop-management">
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">مدیریت محصولات</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">مدیریت سفارشات</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">نظرات محصولات</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">حساب کاربران</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">بخش پشتیبانی</a>
+                </li>
+            </ul>
+
+            <ul class="sidebar__submenu active-submenu" id="finance">
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">حسابداری</a>
+                </li>
+                <li class="sidebar__submenu-item active-submenu-item">
+                    <a href="payslip.html" class="sidebar__submenu-link">فیش حقوقی</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">وام و اقساط شرکت</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href=# class="sidebar__submenu-link">درخواست وام</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">وام های درخواست شده</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">اقساط پرداخت وام</a>
+                </li>
+            </ul>
+
+            <ul class="sidebar__submenu" id="information">
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">مدارک محرمانه شرکت</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">مدارک وام</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">مدارک ارسال شده</a>
+                </li>
+                <li class="sidebar__submenu-item">
+                    <a href="#" class="sidebar__submenu-link">دسترسی به قراردادها</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="payslip__header">
+            <span class="payslip__header-title">فیش حقوقی</span>
+            <span class="payslip__header-line"></span>
+        </div>
+        <div class="payslip__button-wrapper">
+            <div class="payslip__button">
+                <span class="payslip__button-text">نمایش همه پرداختی ها</span>
+                <svg class="w-6 h-6 payslip__button-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="22">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+        </div>
+        <div class="paid-salary-wrapper">
+            <div class="paid-salary">
+                <!--                تگ زیر نمایش اولیه اطلاعات جزئی حقوق می باشد-->
+                <div class="paid-salary__header">
+                    <div class="paid-salary__month-count-info">
+
+                        <!--          توی تگ پایین ماه های پرداخت شمارش میشن-->
+                        <span class="paid-salary__counter">۱</span>
+                        <span class="paid-salary__monthly">- پرداختی ماهانه -</span>
+
+                        <!--          در تگ پایین نام ماه های پرداخت شده نشان داده می شود -->
+                        <span class="paid-salary__month">اردیبهشت</span>
+                    </div>
+                    <div class="paid-salary__date-wrapper">
+                        <span class="paid-salary__date">تاریخ :</span>
+
+                        <!--        زمان پرداخت حقوق ها در تگ زیر وارد کنید    -->
+                        <span class="paid-salary__date paid-salary__date-time">۲۰ اردیبهشت ۱۴۰۲</span>
+                    </div>
+                    <div class="paid-salary__show-details-button">
+                        <svg class="w-6 h-6 paid-salary__show-details-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BBE1FA" width="24" height="22">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                        <div class="cover"></div>
+                    </div>
+                </div>
+                <!--    در تگ زیر جزئیات فیش حقوقی آمده است که پس از کلیک روی سرفلش (اون قسمت سمت چپ اطلاعات جزئی) رو به پایین باز می شود -->
+                <div class="paid-salary__details" data-status="close">
+                    <div class="paid-salary__infos">
+                        <div class="paid-salary__personal-info">
+                            <div class="paid-salary__personal-info-title">
+                                <span class="paid-salary__personal-info-text">مشخصات شما</span>
+                            </div>
+                            <div class="paid-salary__personal-info__detail-wrapper">
+                                <p class="paid-salary__personal-info__detail">کدملی :</p>
+
+                                <!-- کدملی کارمند مدنظر در تگ زیر قرار می گیرد-->
+                                <p class="paid-salary__personal-info__detail-id">۴۵۹۶۳۴۴۹۵۳</p>
+                            </div>
+                            <div class="paid-salary__personal-info__detail-wrapper">
+                                <p class="paid-salary__personal-info__detail">نام و نام خانوادگی :</p>
+
+                                <!--  نام و نام خانوادگی کارمند در تگ زیر می آید-->
+                                <p class="paid-salary__personal-info__detail-name">سید امیرحسین بنائی</p>
+                            </div>
+                            <div class="paid-salary__personal-info__detail-wrapper">
+                                <p class="paid-salary__personal-info__detail">کدپرسنلی :</p>
+
+                                <!--    کد پرسنلی کارمند در تگ زیر می اید-->
+                                <p class="paid-salary__personal-info__detail-idcode">۴۰۰۱۲۲۴۵۶۶</p>
+                            </div>
+                        </div>
+                        <div class="paid-salary__payment-deduction">
+                            <div class="paid-salary__payment-deduction-title">
+                                <span class="paid-salary__payment-deduction-text">پرداخت و کسورات</span>
+                            </div>
+                            <div class="paid-salary__payment-deduction-content">
+                                <div class="paid-salary__payment">
+                                    <div class="paid-salary__working-hours-wrapper">
+                                        <div class="paid-salary__working-hours">
+                                            <span class="paid-salary__working-hours-text">ساعت کاری موظفی در ماه</span>
+
+                                            <!--   در تگ پایین ساعت کاری موظفی در ماه را قرار دهید -->
+                                            <span class="paid-salary__working-hours-month-necessary">۵۴ ساعت</span>
+                                        </div>
+                                        <div class="paid-salary__working-hours">
+                                            <span class="paid-salary__working-hours-text">ساعت اضافه‌کاری در ماه</span>
+
+                                            <!--   در تگ پایین ساعت اضافه‌کاری در ماه را قرار دهید-->
+                                            <span class="paid-salary__working-hours-month-overtime">۳۴ ساعت</span>
+                                        </div>
+                                        <div class="paid-salary__working-hours">
+                                            <span class="paid-salary__working-hours-text">کل ساعات کاری در ماه</span>
+
+                                            <!--    در تگ پایین کل ساعات کاری در ماه را قرار دهید-->
+                                            <span class="paid-salary__working-hours-month-whole-time">۸۸ ساعت</span>
+                                        </div>
+                                    </div>
+
+                                    <!--  قسمت پرداخت ها-->
+                                    <div class="paid-salary__payment-pension-wrapper">
+                                        <span class="paid-salary__payment-pension-text">مبلغ مستمري پایه :</span>
+
+                                        <!--   در تگ پایین ساعت اضافه‌کاری در ماه را قرار دهید-->
+                                        <span class="paid-salary__payment-pension-basic">۱۴۲,۳۴۴,۰۰۰ ریال</span>
+                                    </div>
+                                    <div class="paid-salary__payment-pension-wrapper">
+                                        <span class="paid-salary__payment-pension-text">مستمری اضافه‌کاری :</span>
+
+                                        <!--   در تگ پایین ساعت اضافه‌کاری در ماه را قرار دهید-->
+                                        <span class="paid-salary__payment-pension-overtime">۱۲,۳۶۶,۰۰۰ ریال</span>
+                                    </div>
+                                    <div class="paid-salary__payment-pension-wrapper">
+                                        <span class="paid-salary__payment-pension-text">حق مسکن :</span>
+
+                                        <!--   در تگ پایین ساعت اضافه‌کاری در ماه را قرار دهید-->
+                                        <span class="paid-salary__payment-home-loan">۱۳,۷۶۴,۰۰۰ ریال</span>
+                                    </div>
+                                    <div class="paid-salary__payment-whole-price-wrapper">
+                                        <span class="paid-salary__payment-whole-price-text"> مبلغ پرداختی <span
+                                                style="font-size: 1.3rem">(بدون کسورات)</span> :</span>
+
+                                        <!--    مبلغ کل پرداختی فقط در قسمت پرداخت ها و بدون محاسبه کسورات-->
+                                        <span class="paid-salary__payment-whole-price"> ۱۶۸,۴۷۴,۰۰۰ ریال</span>
+                                    </div>
+                                </div>
+
+                                <!--  قسمت کسورات-->
+                                <div class="paid-salary__deduction">
+                                    <div class="paid-salary__deduction-content">
+                                        <div class="paid-salary__deduction__detail-wrapper">
+                                            <p class="paid-salary__deduction__detail">حق بیمه :</p>
+
+                                            <!--  مبلغی که باید برای حق بیمه برداشته شود-->
+                                            <p class="paid-salary__deduction__detail-insurance">۸,۹۳۰,۰۰۰ ریال</p>
+                                        </div>
+                                        <div class="paid-salary__deduction__detail-wrapper">
+                                            <p class="paid-salary__deduction__detail">بیمه عمر :</p>
+
+                                            <!--  مبلغی که باید برای بیمه عمر برداشته شود-->
+                                            <p class="paid-salary__deduction__detail-lifeInsurance">۴,۵۶۰,۰۰۰ ریال</p>
+                                        </div>
+                                        <div class="paid-salary__deduction__detail-wrapper">
+                                            <p class="paid-salary__deduction__detail">مالیات :</p>
+
+                                            <!--  مبلغی که باید برای مالیات برداشته شود-->
+                                            <p class="paid-salary__deduction__detail-task">۳,۲۰۰,۰۰۰ ریال</p>
+                                        </div>
+                                    </div>
+                                    <div class="paid-salary__payment-whole-price-wrapper">
+                                        <span class="paid-salary__payment-whole-price-text"> مبلغ کسورات :</span>
+
+                                        <!--    مبلغ کل کسورات-->
+                                        <span class="paid-salary__payment-whole-price"> ۱۶,۶۹۰,۰۰۰ ریال</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paid-salary__wholePrice-print-wrapper">
+                        <div class="paid-salary__wholePrice">
+                            <span class="paid-salary__wholePrice-text">مبلغ پرداخت نهایی : </span>
+
+                            <!-- مبلغ نهایی فیش حقوقی با احتساب کسورات-->
+                            <span class="paid-salary__wholePrice-text paid-salary__wholePrice-number">۱۵۱,۷۸۴,۰۰۰ ریال</span>
+                        </div>
+                        <a class="paid-salary__print-link" href="#">
+                            <span class="paid-salary__print-link-text">دانلود pdf</span>
+                            <svg stroke="#BBE1FA" viewBox="0 0 24 24" fill="none" stroke-width="1.5" class="w-6 h-6 paid-salary__print-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="paid-salary">
+                <!--                تگ زیر نمایش اولیه اطلاعات جزئی حقوق می باشد-->
+                <div class="paid-salary__header">
+                    <div class="paid-salary__month-count-info">
+
+                        <!--          توی تگ پایین ماه های پرداخت شمارش میشن-->
+                        <span class="paid-salary__counter">۲</span>
+                        <span class="paid-salary__monthly">- پرداختی ماهانه -</span>
+
+                        <!--          در تگ پایین نام ماه های پرداخت شده نشان داده می شود -->
+                        <span class="paid-salary__month">مرداد</span>
+                    </div>
+                    <div class="paid-salary__date-wrapper">
+                        <span class="paid-salary__date">تاریخ :</span>
+
+                        <!--        زمان پرداخت حقوق ها در تگ زیر وارد کنید    -->
+                        <span class="paid-salary__date paid-salary__date-time">۲۰ مرداد ۱۴۰۲</span>
+                    </div>
+                    <div class="paid-salary__show-details-button">
+                        <svg class="w-6 h-6 paid-salary__show-details-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BBE1FA" width="24" height="22">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                        <div class="cover"></div>
+                    </div>
+                </div>
+                <!--    در تگ زیر جزئیات فیش حقوقی آمده است که پس از کلیک روی سرفلش (اون قسمت سمت چپ اطلاعات جزئی) رو به پایین باز می شود -->
+                <div class="paid-salary__details" data-status="close">
+                    <div class="paid-salary__infos">
+                        <div class="paid-salary__personal-info">
+                            <div class="paid-salary__personal-info-title">
+                                <span class="paid-salary__personal-info-text">مشخصات شما</span>
+                            </div>
+                            <div class="paid-salary__personal-info__detail-wrapper">
+                                <p class="paid-salary__personal-info__detail">کدملی :</p>
+
+                                <!-- کدملی کارمند مدنظر در تگ زیر قرار می گیرد-->
+                                <p class="paid-salary__personal-info__detail-id">۴۵۹۶۳۴۴۹۵۳</p>
+                            </div>
+                            <div class="paid-salary__personal-info__detail-wrapper">
+                                <p class="paid-salary__personal-info__detail">نام و نام خانوادگی :</p>
+
+                                <!--  نام و نام خانوادگی کارمند در تگ زیر می آید-->
+                                <p class="paid-salary__personal-info__detail-name">سید امیرحسین بنائی</p>
+                            </div>
+                            <div class="paid-salary__personal-info__detail-wrapper">
+                                <p class="paid-salary__personal-info__detail">کدپرسنلی :</p>
+
+                                <!--    کد پرسنلی کارمند در تگ زیر می اید-->
+                                <p class="paid-salary__personal-info__detail-idcode">۴۰۰۱۲۲۴۵۶۶</p>
+                            </div>
+                        </div>
+                        <div class="paid-salary__payment-deduction">
+                            <div class="paid-salary__payment-deduction-title">
+                                <span class="paid-salary__payment-deduction-text">پرداخت و کسورات</span>
+                            </div>
+                            <div class="paid-salary__payment-deduction-content">
+                                <div class="paid-salary__payment">
+                                    <div class="paid-salary__working-hours-wrapper">
+                                        <div class="paid-salary__working-hours">
+                                            <span class="paid-salary__working-hours-text">ساعت کاری موظفی در ماه</span>
+
+                                            <!--   در تگ پایین ساعت کاری موظفی در ماه را قرار دهید -->
+                                            <span class="paid-salary__working-hours-month-necessary">۵۴ ساعت</span>
+                                        </div>
+                                        <div class="paid-salary__working-hours">
+                                            <span class="paid-salary__working-hours-text">ساعت اضافه‌کاری در ماه</span>
+
+                                            <!--   در تگ پایین ساعت اضافه‌کاری در ماه را قرار دهید-->
+                                            <span class="paid-salary__working-hours-month-overtime">۳۴ ساعت</span>
+                                        </div>
+                                        <div class="paid-salary__working-hours">
+                                            <span class="paid-salary__working-hours-text">کل ساعات کاری در ماه</span>
+
+                                            <!--    در تگ پایین کل ساعات کاری در ماه را قرار دهید-->
+                                            <span class="paid-salary__working-hours-month-whole-time">۸۸ ساعت</span>
+                                        </div>
+                                    </div>
+
+                                    <!--  قسمت پرداخت ها-->
+                                    <div class="paid-salary__payment-pension-wrapper">
+                                        <span class="paid-salary__payment-pension-text">مبلغ مستمري پایه :</span>
+
+                                        <!--   در تگ پایین ساعت اضافه‌کاری در ماه را قرار دهید-->
+                                        <span class="paid-salary__payment-pension-basic">۱۴۲,۳۴۴,۰۰۰ ریال</span>
+                                    </div>
+                                    <div class="paid-salary__payment-pension-wrapper">
+                                        <span class="paid-salary__payment-pension-text">مستمری اضافه‌کاری :</span>
+
+                                        <!--   در تگ پایین ساعت اضافه‌کاری در ماه را قرار دهید-->
+                                        <span class="paid-salary__payment-pension-overtime">۱۲,۳۶۶,۰۰۰ ریال</span>
+                                    </div>
+                                    <div class="paid-salary__payment-pension-wrapper">
+                                        <span class="paid-salary__payment-pension-text">حق مسکن :</span>
+
+                                        <!--   در تگ پایین ساعت اضافه‌کاری در ماه را قرار دهید-->
+                                        <span class="paid-salary__payment-home-loan">۱۳,۷۶۴,۰۰۰ ریال</span>
+                                    </div>
+                                    <div class="paid-salary__payment-whole-price-wrapper">
+                                        <span class="paid-salary__payment-whole-price-text"> مبلغ پرداختی <span
+                                                style="font-size: 1.3rem">(بدون کسورات)</span> :</span>
+
+                                        <!--    مبلغ کل پرداختی فقط در قسمت پرداخت ها و بدون محاسبه کسورات-->
+                                        <span class="paid-salary__payment-whole-price"> ۱۶۸,۴۷۴,۰۰۰ ریال</span>
+                                    </div>
+                                </div>
+
+                                <!--  قسمت کسورات-->
+                                <div class="paid-salary__deduction">
+                                    <div class="paid-salary__deduction-content">
+                                        <div class="paid-salary__deduction__detail-wrapper">
+                                            <p class="paid-salary__deduction__detail">حق بیمه :</p>
+
+                                            <!--  مبلغی که باید برای حق بیمه برداشته شود-->
+                                            <p class="paid-salary__deduction__detail-insurance">۸,۹۳۰,۰۰۰ ریال</p>
+                                        </div>
+                                        <div class="paid-salary__deduction__detail-wrapper">
+                                            <p class="paid-salary__deduction__detail">بیمه عمر :</p>
+
+                                            <!--  مبلغی که باید برای بیمه عمر برداشته شود-->
+                                            <p class="paid-salary__deduction__detail-lifeInsurance">۴,۵۶۰,۰۰۰ ریال</p>
+                                        </div>
+                                        <div class="paid-salary__deduction__detail-wrapper">
+                                            <p class="paid-salary__deduction__detail">مالیات :</p>
+
+                                            <!--  مبلغی که باید برای مالیات برداشته شود-->
+                                            <p class="paid-salary__deduction__detail-task">۳,۲۰۰,۰۰۰ ریال</p>
+                                        </div>
+                                    </div>
+                                    <div class="paid-salary__payment-whole-price-wrapper">
+                                        <span class="paid-salary__payment-whole-price-text"> مبلغ کسورات :</span>
+
+                                        <!--    مبلغ کل کسورات-->
+                                        <span class="paid-salary__payment-whole-price"> ۱۶,۶۹۰,۰۰۰ ریال</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paid-salary__wholePrice-print-wrapper">
+                        <div class="paid-salary__wholePrice">
+                            <span class="paid-salary__wholePrice-text">مبلغ پرداخت نهایی : </span>
+
+                            <!-- مبلغ نهایی فیش حقوقی با احتساب کسورات-->
+                            <span class="paid-salary__wholePrice-text paid-salary__wholePrice-number">۱۵۱,۷۸۴,۰۰۰ ریال</span>
+                        </div>
+                        <a class="paid-salary__print-link" href="#">
+                            <span class="paid-salary__print-link-text">دانلود pdf</span>
+                            <svg stroke="#BBE1FA" viewBox="0 0 24 24" fill="none" stroke-width="1.5" class="w-6 h-6 paid-salary__print-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="script/shared.js"></script>
+<script src="script/payslip.js"></script>
+</body>
+</html>
